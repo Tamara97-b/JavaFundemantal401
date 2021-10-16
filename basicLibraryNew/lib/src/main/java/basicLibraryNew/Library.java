@@ -20,8 +20,21 @@ public class Library {
                 {65, 56, 55, 52, 55, 62, 57}
         };
         arrayOfArrays(weeklyMonthTemperatures);
-
+        arrayOfweather(weeklyMonthTemperatures);
+        List<String> value= new ArrayList<>();
+        value.add("Bush");
+        value.add("Bush");
+        value.add("Bush");
+        value.add("Shrub");
+        value.add("Hedge");
+        value.add("Shrub");
+        value.add("Bush");
+        value.add("Hedge");
+        value.add("Bush");
+        tally(value);
     }
+
+
 
     public static int[] roll(int n){
 
@@ -70,11 +83,66 @@ public class Library {
 
     }
 
-    public static Object arrayOfweather(int[][] array) {
-        return null;
+
+
+    public static String arrayOfweather(int [][] arrayOfTemps) {
+        System.out.println("\n analyzingWeatherData Method\n");
+
+
+        Set<Integer> temp = new HashSet<Integer>();
+
+        for (int i = 0; i < arrayOfTemps.length; i++) {
+            for (int j = 0; j < arrayOfTemps[i].length; j++) {
+                temp.add(arrayOfTemps[i][j]);
+            }
+        }
+
+        temp = new TreeSet<>(temp);
+
+
+
+        Integer[] temperaturesAsAnArray = temp.toArray(new Integer[temp.size()]);
+
+        int high = temperaturesAsAnArray[temperaturesAsAnArray.length-1];
+        int low = temperaturesAsAnArray[0];
+
+        System.out.println("\n High: " + high);
+        System.out.println("\n Low: " + low);
+
+        System.out.println("\n");
+
+        String tempsNotShown = "";
+        for (int i = low; i < high; i++) {
+            if(!temp.contains(i)){
+                tempsNotShown = "Never saw temperature: " + i;
+                System.out.println(tempsNotShown);
+            }
+        }
+
+        System.out.println(tempsNotShown+"\n");
+
+        return tempsNotShown;
+    }
+    public static String tally(List<String> value){
+
+        System.out.println(value);
+
+        Set<String> repeatedValues = new HashSet<String>();
+        int count = 0;
+        for (int i = 0; i < value.size(); i++) {
+            System.out.println(value.get(i));
+            if(repeatedValues.contains(value.get(i))==true){
+                count++;
+            } else {
+                count = 0;
+                repeatedValues.add(value.get(i));
+            }
+            System.out.println(count);
+        }
+        System.out.println(repeatedValues);
+        String tallyMost = "received the most votes!  "+repeatedValues;
+        return tallyMost;
     }
 
-    public static Object tally(List<String> votes) {
-        return null;
-    }
+
 }
