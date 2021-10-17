@@ -12,7 +12,7 @@
 ### containsDuplicates(): return a truth or false if i have a duplicate value in the array
 ### calculatingAverages():calculate an average for a array
 ### arrayOfArrays() : turn an array of array into a normal array contain the average of each array then find the lowes avarge.
-
+# lab 4 
 ## File
 ### Library.java
 ### Restaurant.java
