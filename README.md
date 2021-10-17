@@ -13,3 +13,27 @@
 ### calculatingAverages():calculate an average for a array
 ### arrayOfArrays() : turn an array of array into a normal array contain the average of each array then find the lowes avarge.
 
+## File
+### Library.java
+### Restaurant.java
+### Review.java
+
+### Includes name , stars, price 
+## methods:
+### Restaurant: constructor to assign the name.
+### setStars : calculate rating.
+### setPrice : calculate the price (number of dollar sing).
+### addReview : add the new review to the restaurant and calculate the new rating.
+### getter methods : to get the values of the restaurant.
+## Review class:
+### Includes body , author and numberOfStars.
+## methods:
+### Review: constructor to assign the values.
+### getter methods : to get the values of the restaurant.
+### Shop Class :
+### Includes name, description, and number of dollar signs.
+## methods:
+### toString methods : to return class String.
+### getter and setter method : get and set a values to the descriptions.
+
+
