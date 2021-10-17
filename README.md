@@ -12,4 +12,4 @@
 ### containsDuplicates(): return a truth or false if i have a duplicate value in the array
 ### calculatingAverages():calculate an average for a array
 ### arrayOfArrays() : turn an array of array into a normal array contain the average of each array then find the lowes avarge.
-### arrayOfweather(): to turn two daimnsional array to normal array and sort it and find high and low temp and missing temp ### tally():remve daplicat value from an array
+
