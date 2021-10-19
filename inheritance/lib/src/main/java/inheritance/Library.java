@@ -9,10 +9,19 @@ public class Library {
     public static void main(String[] args) {
         System.out.println("hello");
         Resturant resturant = new Resturant("mac",4,"5$");
+
+        Shops shops = new Shops("tamara","clothing shop",4);
         Review review = new Review("nice","tamara",3);
-//        Review review2 = new Review("good","heba",5);
+        Review review2 = new Review("good","tamara",3);
         System.out.println(review);
-        resturant.addReview(review);
+        System.out.println(resturant.addReview(review));
+        System.out.println(shops.addReview(review));
+        shops.addReview(review2);
+
+
+
+
+
 
 
 

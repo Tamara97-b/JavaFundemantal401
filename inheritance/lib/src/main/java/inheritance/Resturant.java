@@ -2,7 +2,7 @@ package inheritance;
 
 import java.util.ArrayList;
 
-public class Resturant  {
+public class Resturant implements Reviewable  {
 
     private String  name ;
     private double stars ;

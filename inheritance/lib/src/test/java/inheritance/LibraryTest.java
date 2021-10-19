@@ -37,9 +37,9 @@ class LibraryTest {
      assertEquals("delesious",resturant.getAllReviews().get(0).getBody());
      assertEquals(2,resturant.getAllReviews().get(0).getStars());
 
-
-
-
-
+    }
+    @Test void basicShop(){
+        Shops shop = new Shops("tamara","clothes shop",2);
+        System.out.println(shop.toString());
     }
 }
